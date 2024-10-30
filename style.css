@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.buttons{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width:100vw;
+    text-align:center;
+}
+#canvas1{
+    background:black;
+}
+
+.button{
+    position: relative;
+    width: 25%;
+    height: 120px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 5px solid white;
+    background:transparent;
+    transition:0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
