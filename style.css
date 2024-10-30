@@ -57,6 +57,31 @@ button:nth-child(3)::before{
     content: 'about';
 
 }
+button:hover::before{
+    color: yellow;
+    box-shadow: inset 10px 10px 15px red,
+    inset -10px -10px 15px red,
+    inset -10px 10px 15px red,
+    inset 10px -10px 15px red;
+}
+.button:hover{
+    box-shadow:  10px 10px 15px red,
+     -10px -10px 15px red,
+     -10px 10px 15px red,
+      10px -10px 15px red;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
