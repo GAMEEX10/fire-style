@@ -59,16 +59,24 @@ button:nth-child(3)::before{
 }
 button:hover::before{
     color: yellow;
-    box-shadow: inset 10px 10px 15px red,
-    inset -10px -10px 15px red,
-    inset -10px 10px 15px red,
-    inset 10px -10px 15px red;
+    box-shadow: inset 10px 10px 15px orange,
+    inset -10px -10px 15px orange,
+    inset -10px 10px 15px orange,
+    inset 10px -10px 15px orange;
+    background: yellow;
+    
+    text-shadow: 5px 5px 5px orange,
+     -5px -5px 5px orange,
+     -5px 5px 5px orange,
+      5px -5px 5px orange;
 }
 .button:hover{
-    box-shadow:  10px 10px 15px red,
-     -10px -10px 15px red,
-     -10px 10px 15px red,
-      10px -10px 15px red;
+    box-shadow:  10px 10px 15px orange,
+     -10px -10px 15px orange,
+     -10px 10px 15px orange,
+      10px -10px 15px orange;
+      border: 5px solid orange;
+      background: orange;
   
 }
 
