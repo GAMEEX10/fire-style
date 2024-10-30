@@ -35,7 +35,7 @@ class particle {
     }
 }
 
-let activeButton =0;
+let activeButton = -1;
 buttonElements.forEach(button => button.addEventListener('mouseenter', function(){
     activeButton = button.dataset.number;
     }));
@@ -48,11 +48,39 @@ function handleParticles(){
         particlesArray[i].update();
         particlesArray[i].draw();
         if(particlesArray[i].size <= 1){
-            particlesArray[i].splice(i, 1);
+            particlesArray.splice(i, 1);
             i--;
         }
     }
 }
+function createParticle(){
+    if(activeButton > -1){
+        let size = Math.random() * 40 + 10;
+        let x = Math.random() * (buttonMeasurements[activeButton].width -size * 2) + buttonMeasurements[activeButton].x + size;
+        let y =  buttonMeasurements[activeButton].y + 40;
+        particlesArray.push(new particle(x, y, size));
+    }
+}
+function animate(){
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+    createParticle();
+    handleParticles();
+    requestAnimationFrame(animate);
+}
+animate();
+
+
+window.addEventListener('resize', function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    measureButtons();
+    
+});
+
+
+
+
+
 
 
 
