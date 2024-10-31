@@ -25,14 +25,15 @@ body{
     filter: blur(10px) contrast(5);
 }
 
+
 .button{
     position: relative;
-    width: 25%;
-    height: 120px;
-    margin: 10px;
+    width: 100%;
+    height: 600px;
+    margin: 0px;
     display: inline-block;
-    border-radius: 50px;
-    border: 5px solid white;
+    border-radius: 0px;
+    border: 0px solid white;
     background:transparent;
     transition:0.5s;
     font-size: 50px;
@@ -51,10 +52,10 @@ body{
     top:0;
     left:0;
     border-radius: 50px;
-    transition: 0.5s;
+    transition: 0.10s;
 }
 button:nth-child(1)::before{
-    content: 'Shakir';
+    content: 'Vanilla Planet!';
 }
 button:nth-child(2)::before{
     content: 'Adam';    
@@ -64,25 +65,25 @@ button:nth-child(3)::before{
 
 }
 button:hover::before{
-    color: lightgray;
-    box-shadow: inset 10px 10px 15px gray,
-    inset -10px -10px 15px gray,
-    inset -10px 10px 15px gray,
-    inset 10px -10px 15px gray;
-    background: lightgray;
+    color: white;
+    box-shadow: inset 10px 10px 15px white,
+    inset -10px -10px 15px white,
+    inset -10px 10px 15px white,
+    inset 10px -10px 15px white;
+    background: white;
     
     text-shadow: 5px 5px 5px gray,
-     -5px -5px 5px gray,
-     -5px 5px 5px gray,
-      5px -5px 5px gray;
+     -5px -5px 5px white,
+     -5px 5px 5px white,
+      5px -5px 5px white;
 }
 .button:hover{
-    box-shadow:  10px 10px 15px gray,
-     -10px -10px 15px gray,
-     -10px 10px 15px gray,
-      10px -10px 15px gray;
-      border: 5px solid gray;
-      background: gray;
+    box-shadow:  10px 10px 15px white,
+     -10px -10px 15px white,
+     -10px 10px 15px white,
+      10px -10px 15px white;
+      border: 5px solid white;
+      background: white;
   
 }
 
