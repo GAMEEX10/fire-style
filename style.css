@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: white;
+}
+
 body{
     background: black;
     overflow: hidden;
@@ -50,35 +54,35 @@ body{
     transition: 0.5s;
 }
 button:nth-child(1)::before{
-    content: 'Home';
+    content: 'Shakir';
 }
 button:nth-child(2)::before{
-    content: 'shop';    
+    content: 'Adam';    
 }
 button:nth-child(3)::before{
-    content: 'about';
+    content: 'Elsayed';
 
 }
 button:hover::before{
-    color: yellow;
-    box-shadow: inset 10px 10px 15px orange,
-    inset -10px -10px 15px orange,
-    inset -10px 10px 15px orange,
-    inset 10px -10px 15px orange;
-    background: yellow;
+    color: lightgray;
+    box-shadow: inset 10px 10px 15px gray,
+    inset -10px -10px 15px gray,
+    inset -10px 10px 15px gray,
+    inset 10px -10px 15px gray;
+    background: lightgray;
     
-    text-shadow: 5px 5px 5px orange,
-     -5px -5px 5px orange,
-     -5px 5px 5px orange,
-      5px -5px 5px orange;
+    text-shadow: 5px 5px 5px gray,
+     -5px -5px 5px gray,
+     -5px 5px 5px gray,
+      5px -5px 5px gray;
 }
 .button:hover{
-    box-shadow:  10px 10px 15px orange,
-     -10px -10px 15px orange,
-     -10px 10px 15px orange,
-      10px -10px 15px orange;
-      border: 5px solid orange;
-      background: orange;
+    box-shadow:  10px 10px 15px gray,
+     -10px -10px 15px gray,
+     -10px 10px 15px gray,
+      10px -10px 15px gray;
+      border: 5px solid gray;
+      background: gray;
   
 }
 
